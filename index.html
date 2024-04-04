@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Dogs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+        }
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #333;
+        }
+        section p {
+            font-size: 18px;
+            color: #666;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .grid-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .chat-bot {
+            margin-top: 30px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#home">HOME</a> |
+                <a href="#menu">MENU</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#aboutus">ABOUT US</a> |
+                <a href="#contactus">CONTACT US</a>
+            </nav>
+        </header>
+
+        <section id="home">
+            <img src="banner.jpg" alt="Banner Image">
+        </section>
+
+        <section id="menu">
+            <h2>Top Products with Top Brands</h2>
+            <div class="grid-container">
+                <img src="img1.jpeg" alt="Brand">
+                <img src="img2.png" alt="Brand">
+                <img src="img3.png" alt="Brand">
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <p>We are located in Gujarat, Rajasthan, Maharashtra, Jaipur, and Indore.</p>
+            <!-- Add map widget here -->
+        </section>
+
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <p>Got questions? Want to place an order? Call us at <a href="tel:+917405818275">+91 7405818275</a> or email us at <a href="mailto:asthahelp@justdogs.com">asthahelp@justdogs.com</a>.</p>
+        </section>
+
+       <iframe class="chat-bot"  width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/abee8e3f-2ed0-4c3f-84d9-7c0adc21d48e"></iframe>
+    </div>
+</body>
+</html>
